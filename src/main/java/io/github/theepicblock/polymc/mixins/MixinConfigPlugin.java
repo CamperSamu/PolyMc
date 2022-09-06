@@ -43,6 +43,7 @@ public class MixinConfigPlugin implements IMixinConfigPlugin {
             ConfigManager.LOGGER.warn("PolyMc: couldn't read config.");
             throw new NullPointerException("Couldn't read config");
         }
+
     }
 
     @Override

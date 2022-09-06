@@ -28,6 +28,10 @@ repositories {
 			includeGroup("xyz.nucleoid")
 		}
 	}
+	maven {
+		name 'Quilt'
+		url 'https://maven.quiltmc.org/repository/release'
+	}
 }
 
 dependencies {
@@ -48,6 +52,12 @@ dependencies {
 		transitive(false)
 	}
 	modCompileOnly("com.github.qouteall.ImmersivePortalsMod:q_misc_util:${project.immersive_portals_version}") {
+		transitive(false)
+	}
+	modCompileOnly("org.quiltmc:qsl:${project.qsl_version}") {
+		transitive(false)
+	}
+	modCompileOnly("org.quiltmc.qsl.core:registry:${project.qsl_registry_version}") {
 		transitive(false)
 	}
 }

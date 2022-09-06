@@ -74,6 +74,10 @@ public class Config {
             return !FabricLoader.getInstance().isModLoaded("fabric-registry-sync-v0");
         }
 
+        if (mixin.equals("compat.QuiltRegistrySyncDisabler")) {
+            return !FabricLoader.getInstance().isModLoaded("quilt_registry");
+        }
+
         if (mixin.startsWith("compat.immersive_portals")) {
             return !FabricLoader.getInstance().isModLoaded("imm_ptl_core");
         }
