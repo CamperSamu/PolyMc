@@ -81,6 +81,7 @@ public class Config {
         if (mixin.startsWith("compat.immersive_portals")) {
             return !FabricLoader.getInstance().isModLoaded("imm_ptl_core");
         }
+
         if (mixin.equals("block.implementations.ChunkDataPlayerProvider") || mixin.equals("wizards.block.WatchProviderMixin")) {
             return FabricLoader.getInstance().isModLoaded("imm_ptl_core");
         }
